@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar transparent text-center>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="transparent">
+
+
+    <div text-center>
+  <h3>Create Account</h3>
+</div>
+
+    <form (ngSubmit)="signup()" [formGroup]="form">
+        <ion-list inset>
+            <ion-label style="color: grey">Type your email.</ion-label>
+            <ion-item style="background-color: transparent" no-lines>
+
+                <ion-input style="background-color: pink"  type="email" placeholder="" formControlName="email"></ion-input>
+
+            </ion-item>
+            <p style="color: grey;font-size:85%">We'll send you confirmation to this email.</p>
+
+
+
+
+            <ion-label style="color: grey">Create Password.</ion-label>
+            <ion-item style="background-color: transparent" no-lines>
+                <ion-input style="background-color: pink" type="password" placeholder="" formControlName="password"></ion-input>
+            </ion-item>
+            <p style="color: grey;font-size:85%">Minimum should be 6 charcters.</p>
+
+
+        </ion-list>
+
+        <div text-center padding-horizontal>
+            <div class="form-error">{{signupError}}</div>
+
+            <button ion-button round small padding type="submit" [disabled]="!form.valid">Next</button>
+        </div>
+    </form>
+</ion-content>

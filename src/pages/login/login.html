@@ -1,0 +1,63 @@
+<ion-header>
+    <ion-navbar transparent text-center>
+
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+
+
+   <div text-center>
+  <h3>Sign In</h3>
+</div>
+
+
+
+
+  <form (ngSubmit)="login()" [formGroup]="loginForm">
+		<ion-list inset>
+
+		 <ion-label style="color: grey">Email or username.</ion-label>
+            <ion-item style="background-color: transparent" no-lines>
+<!-- get code to check condition if username then set input tye to text else if email set to email -->
+<!-- get code to check condition if username then set input tye to text else if email set to email -->
+<!-- get code to check condition if username then set input tye to text else if email set to email -->
+<!-- get code to check condition if username then set input tye to text else if email set to email -->
+<!-- get code to check condition if username then set input tye to text else if email set to email -->
+
+                <ion-input style="background-color: pink"  type="text" placeholder="" formControlName="email"></ion-input>
+
+            </ion-item>
+
+            <!-- use this belo bitch for errors -->
+            <!-- <p style="color: grey;font-size:85%">We'll send you confirmation to this email.</p> -->
+
+
+
+
+            <ion-label style="color: grey">Password.</ion-label>
+            <ion-item style="background-color: transparent" no-lines>
+                <ion-input style="background-color: pink" type="password" placeholder="" formControlName="password"></ion-input>
+            </ion-item>
+            <!-- <p style="color: grey;font-size:85%">Minimum should be 6 charcters.</p> -->
+
+
+
+
+		</ion-list>
+
+		<div style="margin-top:25vh" padding-horizontal>
+			<div text-center style="color:red;" class="form-error">{{loginError}}</div>
+
+			<button ion-button round medium block type="submit" [disabled]="!loginForm.valid">Log in</button>
+
+      <div text-center style="color:white;margin-top:5vh" >Get help logging in</div>
+			<ion-list>
+
+
+			
+			</ion-list>
+		</div>
+	</form>
+</ion-content>
