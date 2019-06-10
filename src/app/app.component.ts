@@ -90,7 +90,7 @@ export class MyApp {
       .subscribe(
         user => {
           if (user && user.emailVerified) {
-            this.rootPage = ChoosePage;
+            this.rootPage = IntroPage;
           } else if (user && !user.emailVerified) {
             alert('Please verify your email address to gain access');
             this.rootPage = LoginPage;

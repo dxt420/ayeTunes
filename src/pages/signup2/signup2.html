@@ -20,7 +20,7 @@
                 <ion-datetime displayFormat="MMM DD, YYYY" style="background-color: pink;width:100%" formControlName="dob" ></ion-datetime>
 
             </ion-item>
-            <p style="color: grey;font-size:85%">We'll send you confirmation to this email.</p>
+
 
 
 
@@ -29,9 +29,10 @@
 
 
             <ion-item style="background-color: transparent">
-              <ion-label style="color: grey">Select your gender</ion-label>
-              <ion-select placeholder="Select One" formControlName="gender">
-                  <ion-option value="Male">Male</ion-option>
+
+              <ion-select placeholder="Select Gender" formControlName="gender">
+                <ion-option value="-1">Select Gender</ion-option>
+                <ion-option value="Male">Male</ion-option>
                   <ion-option value="Female">Female</ion-option>
               </ion-select>
           </ion-item>

@@ -30,4 +30,10 @@ export class IntroPage {
     this.navCtrl.push(SignupPage);
   }
 
+  fb(){
+    this.navCtrl.push('TabsPage');
+
+    
+  }
+
 }

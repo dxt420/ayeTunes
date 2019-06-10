@@ -8,10 +8,10 @@ export const MainPage = 'SchedulePage';
 // export const HomePage = 'HomePage';
 
 // The initial root pages for our tabs (remove if not using tabs)
-export const Tab1Root = 'SchedulePage';
-export const Tab2Root = 'AboutPage';
+export const Tab1Root = 'HomePage';
+export const Tab2Root = 'SearchPage';
 export const Tab3Root = 'HomePage';
-export const Tab4Root = 'NotifyPage';
+export const Tab4Root = 'MorePage';
 export const Tab5Root = 'ProfilePage';
 export const Tab6Root = 'SpeakersPage';
 export const Tab7Root = 'SponsorsPage';

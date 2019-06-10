@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-list no-lines style="padding-top:20px; ">
+
+    <ion-item style="background-color: rgba(0, 0, 0, 0);" *ngFor="let p of pages" menuClose (click)="openPage(p)">
+      <ion-icon [name]="p.icon" item-left></ion-icon>
+      {{ p.title }}
+    </ion-item>
+
+
+
+
+  </ion-list>
+  <br><br>
+  <ion-avatar style="width: 40%;margin-left:30%;margin-bottom:1%;" id="jjj">
+      <img [src]="'assets/img/host.png'">
+
+  </ion-avatar>
+  <br><br>
+
+
+</ion-content>

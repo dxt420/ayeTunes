@@ -49,11 +49,7 @@ export const firebaseConfig = {
     projectId: "keti-1d31b",
     storageBucket: "keti-1d31b.appspot.com",
     messagingSenderId: "212359239652"
-
-
-
-
-};
+  };
 
 firebase.initializeApp(firebaseConfig);
 
@@ -110,7 +106,6 @@ firebase.initializeApp(firebaseConfig);
     AuthProvider,
     AngularFireAuth,
     ImagePicker,
-    
     FcmProvider,
     Firebase,
     Crop,
